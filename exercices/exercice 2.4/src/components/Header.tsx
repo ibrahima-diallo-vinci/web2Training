@@ -1,17 +1,17 @@
-import "./Footer.css";
+import "./Header.css";
 
-interface FooterProps {
+interface HeaderProps {
     urlLogo: string;
     children: React.ReactNode;
-};
+}
 
-const Footer = (props: FooterProps) => {
+const Header = (props: HeaderProps) => {
     return (
-        <footer className="footer">
+        <header className="header">
             <img src={props.urlLogo} alt="Logo" className="logo"/>
             <div>{props.children}</div>
-        </footer>
-    )
+        </header>
+    );
 };
 
-export default Footer;
+export default Header;
